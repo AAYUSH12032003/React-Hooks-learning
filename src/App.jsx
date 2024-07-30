@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 
@@ -14,7 +13,7 @@ let [counter ,setCounter]= useState(15); // 15 is the default value for counter
 
   const addValue = ()=>{
     
-    setCounter(counter + 1);
+     setCounter(counter + 1);
     setCounter(counter + 1);
     setCounter(counter + 1);
     setCounter(counter + 1);
@@ -22,7 +21,7 @@ let [counter ,setCounter]= useState(15); // 15 is the default value for counter
 // and react will render the whole batch of commands once !. so that it don't bring inconsistency in UI.
 
 // for adding 4 directly to counter write : setCounter(counter+4); or write this statement 4 times one below the other : setCounter(prevCounter => prevCounter+1);
-    setCounter(counter);
+
     console.log("clicked :", counter);
 
     if(counter > 25) {
